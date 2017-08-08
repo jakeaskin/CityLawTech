@@ -62,44 +62,6 @@ i { font-size: 20px}
         <section id="main-content">
           <i>If you are interested in submitting a project to the CivicLawTech page, submit an email to <a href="CityLawTech@gmail.com">CityLawTech@gmail.com</a> with the name of the project and any information and documentation that may help us publicize that project.</i>
         </section>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-
-        <script>
-
-            $(function() {
-
-
-           var contact = [];
-
-           $.getJSON('ContactI.json', function(data) {
-               $.each(data.contacts, function(i, f) {
-                  var tblRow = "<tr>" + "<td>" + f.Contact + "</td>" +
-                   "<td>" + f.Email + "</td>" + "<td>" + f.Twitter + "</td>" + "<td>" + f.Facebook  + "</td>" + "</tr>"
-                   $(tblRow).appendTo("#userdata tbody");
-             });
-
-           });
-
-        });
-        </script>
-
-        <div class="wrapper">
-      <div class="profile">
-         <table id= "userdata" border="2">
-        <thead>
-                  <th>Contact</th>
-                  <th>Email</th>
-                  <th>Twitter</th>
-                  <th>Facebook</th>
-              </thead>
-            <tbody>
-
-             </tbody>
-         </table>
-
-      </div>
-      </div>
-
         <aside id="sidebar">
         </aside>
       </div>
